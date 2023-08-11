@@ -1,47 +1,45 @@
-Forex Prediction Project README
+# Forex Prediction Project
 
-Description
+## Description
 
-This project focuses on predicting currency exchange rates using historical data and machine learning techniques. By leveraging a pipeline orchestrated through Apache Airflow, the project collects and cleans data from a Forex website, performs feature engineering using the past 60 days' price values, and trains a predictive model to forecast currency outcomes.
+The Forex Prediction Project aims to predict currency exchange rates using historical data and machine learning techniques. It employs an orchestrated pipeline managed through Apache Airflow to collect and clean data from a Forex website. Feature engineering is conducted using the past 60 days' price values, and a predictive model is trained to forecast currency outcomes.
 
-Installation
+## Installation
 
-•	https://github.com/aameerhamza1801/forex_predictor_pipeline.git
-•	pip install -r Requirements.txt
+- Clone the repository: `https://github.com/aameerhamza1801/forex_predictor_pipeline.git`
+- Install required packages: `pip install -r Requirements.txt`
 
-Usage
+## Usage
 
-•	Configure your Forex website credentials in the configuration file.
-•	Ensure that Apache Airflow is set up and configured properly.
-•	Run the Airflow DAG to trigger the pipeline.
-Features
+- Configure your Forex website credentials in the provided configuration file.
+- Ensure that Apache Airflow is properly set up and configured.
+- Run the Airflow DAG to initiate the pipeline.
 
-•	Utilizes historical Forex data for accurate prediction.
-•	Uses a sliding window approach, considering the last 60 days' price values as features.
-•	Predicts currency outcomes using a machine learning model.
-•	Orchestrates the entire process using Apache Airflow.
+## Features
 
-Pipeline
+- Utilizes historical Forex data to enhance prediction accuracy.
+- Adopts a sliding window technique, incorporating the last 60 days' price values as features.
+- Predicts currency outcomes through a machine learning model.
+- Orchestrates the complete process using Apache Airflow.
 
-•	The project's pipeline includes the following steps:
-•	Data Collection: Retrieve historical currency exchange data from the Forex website.
-•	Data Cleaning: Preprocess and clean the collected data.
-•	Feature Engineering: Create features based on the past 60 days' price values.
-•	Model Training: Train a machine learning model on the engineered features.
-•	Prediction: Make predictions using the trained model.
-•	Results: Evaluate and visualize the model's performance.
+## Pipeline
 
+The project's pipeline comprises the following stages:
+- Data Collection: Retrieves historical currency exchange data from the Forex website.
+- Data Cleaning: Preprocesses and scrubs the acquired data.
+- Feature Engineering: Generates features based on the price values from the past 60 days.
+- Model Training: Trains a machine learning model using the engineered features.
+- Prediction: Makes predictions utilizing the trained model.
+- Results: Assesses and visualizes the model's performance.
 
+## FAQs
 
+- **Q:** How frequently is the prediction model updated?
+  - **A:** The model is updated as per the schedule defined in the Airflow DAG.
 
+- **Q:** Can I apply this project to other financial instruments?
+  - **A:** Although this project is customized for Forex prediction, you can adapt it for other financial instruments with appropriate adjustments.
 
-FAQs
+## Support
 
-•	Q: How often is the prediction model updated? A: The model is updated based on the defined schedule in the Airflow DAG.
-•	Q: Can I use this project for other financial instruments? A: While this project is tailored for Forex prediction, you can modify it for other financial instruments with suitable adjustments.
-
-Support
-
-•	If you encounter any issues or have questions, feel free to contact us at hamza91ghani@gmail.com
-
-
+If you encounter any difficulties or have inquiries, please don't hesitate to contact us at hamza91ghani@gmail.com.
